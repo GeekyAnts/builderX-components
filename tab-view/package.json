@@ -1,0 +1,20 @@
+{
+  "name": "@builderX/tab-view",
+  "version": "0.1.0",
+  "description":
+    "react-native-tab-view wrapper for BuilderX (https://builderx.io)",
+  "main": "index.js",
+  "repository": "https://github.com/GeekyAnts/builderX-components",
+  "author": "GeekyAnts",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0"
+  },
+  "dependencies": {
+    "react-native-tab-view": "^0.0.74"
+  },
+  "peerDependencies": {
+    "react-native": "*",
+    "react": "*"
+  }
+}
