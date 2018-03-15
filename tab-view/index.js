@@ -26,10 +26,14 @@ class TabView extends React.Component {
     });
   }
 
-  _renderScene = SceneMap({
-    first: FirstRoute,
-    second: SecondRoute
-  });
+  _handleIndexChange = index => {
+    if (typeof this.props.onIndexChange === "function") {
+      console.log("here");
+      this.props.onIndexChange(index);
+    } else {
+      this.setState({ index });
+    }
+  };
 
   render() {
     const sceneMap = {};
@@ -56,7 +60,7 @@ class TabView extends React.Component {
         style={this.props.style}
         navigationState={navigationState}
         renderScene={SceneMap(sceneMap)}
-        onIndexChange={index => this.setState({ index })}
+        onIndexChange={this._handleIndexChange}
         renderHeader={(props: any) => (
           <TabBar
             {...props}
