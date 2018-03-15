@@ -1,12 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { TabViewAnimated, TabBar, SceneMap } from "react-native-tab-view";
-const FirstRoute = () => (
-  <View style={[styles.container, { backgroundColor: "#ff4081" }]} />
-);
-const SecondRoute = () => (
-  <View style={[styles.container, { backgroundColor: "#673ab7" }]} />
-);
+
 class TabView extends React.Component {
   state = {
     index: 0,
@@ -28,7 +23,6 @@ class TabView extends React.Component {
 
   _handleIndexChange = index => {
     if (typeof this.props.onIndexChange === "function") {
-      console.log("here");
       this.props.onIndexChange(index);
     } else {
       this.setState({ index });
@@ -53,7 +47,7 @@ class TabView extends React.Component {
       return null;
     }
 
-    console.log(sceneMap, navigationState, "sceneMap, navigationState");
+    // console.log(sceneMap, navigationState, "sceneMap, navigationState");
 
     return (
       <TabViewAnimated
