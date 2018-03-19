@@ -10,10 +10,11 @@
     "babel-preset-react-native": "^4.0.0"
   },
   "dependencies": {
-    "react-native-tab-view": "^0.0.74"
+    "react-native-tab-view": "^0.0.74",
+    "uuid": "^3.2.1"
   },
   "peerDependencies": {
-    "react-native": "*",
-    "react": "*"
+    "react": "*",
+    "react-native": "*"
   }
 }
