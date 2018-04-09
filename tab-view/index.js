@@ -10,7 +10,7 @@ class TabView extends React.Component {
   };
 
   _updateNavState = nextProps => {
-    console.log("_updateNavState");
+    // console.log("_updateNavState");
     let props = this.props;
     if (nextProps) {
       props = nextProps;
@@ -22,7 +22,7 @@ class TabView extends React.Component {
       };
     });
 
-    console.log(routes, "wdwdwd", props.children);
+    // console.log(routes, "wdwdwd", props.children);
 
     this.setState({
       routes: [...routes] // continue here, cannot update state in componentWillUpdate
@@ -41,18 +41,18 @@ class TabView extends React.Component {
   // }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(
-      "componentDidUpdate",
-      prevProps,
-      prevState,
-      this.props,
-      this.state
-    );
+    // console.log(
+    //   "componentDidUpdate",
+    //   prevProps,
+    //   prevState,
+    //   this.props,
+    //   this.state
+    // );
     if (
       this.state.routes.length !== this.props.children.length ||
       prevProps !== this.props
     ) {
-      console.log("i am here");
+      // console.log("i am here");
       this._updateNavState(this.props);
     }
   }
@@ -80,13 +80,13 @@ class TabView extends React.Component {
     }
 
     this.props.children.forEach((child, index) => {
-      console.log(this.state.routes, index, child, "testetsttest");
+      // console.log(this.state.routes, index, child, "testetsttest");
       if (this.state.routes[index]) {
         sceneMap[this.state.routes[index].key] = () => child;
       }
     });
 
-    console.log(sceneMap, navigationState, "sceneMap, navigationState");
+    // console.log(sceneMap, navigationState, "sceneMap, navigationState");
 
     return (
       <TabViewAnimated
