@@ -1,0 +1,18 @@
+{
+  "name": "@builderx/icons",
+  "version": "0.1.5",
+  "main": "index.js",
+  "author": "GeekyAnts",
+  "license": "MIT",
+  "description":
+    "react-native-vector-icons wrapper for BuilderX (https://builderx.io)",
+  "dependencies": {
+    "react-native-vector-icons": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-preset-react-native": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.3.1"
+  }
+}
