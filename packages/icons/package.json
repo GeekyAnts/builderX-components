@@ -4,8 +4,7 @@
   "main": "index.js",
   "author": "GeekyAnts",
   "license": "MIT",
-  "description":
-    "react-native-vector-icons wrapper for BuilderX (https://builderx.io)",
+  "description": "react-native-vector-icons wrapper for BuilderX (https://builderx.io)",
   "dependencies": {
     "react-native-vector-icons": "^4.3.0"
   },

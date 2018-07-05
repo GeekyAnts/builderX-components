@@ -1,8 +1,7 @@
 {
   "name": "@builderx/tab-view",
   "version": "0.1.5",
-  "description":
-    "react-native-tab-view wrapper for BuilderX (https://builderx.io)",
+  "description": "react-native-tab-view wrapper for BuilderX (https://builderx.io)",
   "main": "index.js",
   "repository": "https://github.com/GeekyAnts/builderX-components",
   "author": "GeekyAnts",
