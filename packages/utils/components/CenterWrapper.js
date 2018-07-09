@@ -3,12 +3,10 @@ import { View } from "react-native";
 
 export default class CenterWrapper extends React.Component {
   render() {
-    let horizontally, vertically;
+    let horizontal, vertical;
 
-    horizontally =
-      this.props.vertically && !this.props.horizontally ? false : true;
-    vertically =
-      this.props.horizontally && !this.props.vertically ? false : true;
+    horizontal = this.props.vertical && !this.props.horizontal ? false : true;
+    vertical = this.props.horizontal && !this.props.vertical ? false : true;
 
     return (
       <View
@@ -18,8 +16,8 @@ export default class CenterWrapper extends React.Component {
           right: 0,
           bottom: 0,
           position: "absolute",
-          alignItems: horizontally ? "center" : undefined,
-          justifyContent: vertically ? "center" : undefined
+          alignItems: horizontal ? "center" : undefined,
+          justifyContent: vertical ? "center" : undefined
         }}
         pointerEvents="box-none"
       >
