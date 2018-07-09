@@ -1,6 +1,6 @@
 {
   "name": "@builderx/utils",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Center wrapper for components in BuilderX (https://builderx.io)",
   "main": "index.js",
   "repository": "https://github.com/GeekyAnts/builderX-components",
