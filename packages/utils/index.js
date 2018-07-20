@@ -1,1 +1,1 @@
-export Center from "./components/CenterWrapper";
+export { Center } from "./components/CenterWrapper";
