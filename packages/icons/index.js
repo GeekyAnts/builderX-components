@@ -1,9 +1,11 @@
 import React from "react";
 
+import AntDesign from "react-native-vector-icons/AntDesign";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
 import Feather from "react-native-vector-icons/Feather";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Foundation from "react-native-vector-icons/Foundation";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -18,6 +20,9 @@ class Icon extends React.Component {
       iconType = "MaterialCommunityIcons";
     }
     switch (iconType) {
+      case "AntDesign":
+        this.Icon = AntDesign;
+        break;
       case "Entypo":
         this.Icon = Entypo;
         break;
@@ -29,6 +34,9 @@ class Icon extends React.Component {
         break;
       case "FontAwesome":
         this.Icon = FontAwesome;
+        break;
+      case "FontAwesome5":
+        this.Icon = FontAwesome5;
         break;
       case "Foundation":
         this.Icon = Foundation;
@@ -67,7 +75,7 @@ class Icon extends React.Component {
   }
 
   render() {
-    return <this.Icon ref={c => (this._root = c)} {...this.props} />;
+    return <this.Icon ref={(c) => (this._root = c)} {...this.props} />;
   }
 }
 export default Icon;

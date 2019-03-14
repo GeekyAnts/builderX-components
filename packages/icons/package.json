@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "react-native-vector-icons wrapper for BuilderX (https://builderx.io)",
   "dependencies": {
-    "react-native-vector-icons": "^6.1.0"
+    "react-native-vector-icons": "^6.4.1"
   },
   "devDependencies": {
     "babel-preset-react-native": "^4.0.0"
