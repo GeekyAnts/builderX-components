@@ -16,8 +16,8 @@
     "metro-react-native-babel-preset": "^0.59.0"
   },
   "peerDependencies": {
-    "react": "^16.3.1",
-    "react-native": "^0.55.1"
+    "react": "^16.3.1 || ^18.0.0",
+    "react-native": "^0.55.1 || ^0.70.x"
   },
   "publishConfig": {
     "access": "public"
